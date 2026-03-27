@@ -43,7 +43,7 @@ devtools::install_github("martinezc1/nysOpenData")
 ```
 ---
 
-## Example
+## Example 
 
 ```{r}
 library(nysOpenData)
