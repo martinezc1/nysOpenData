@@ -1,0 +1,31 @@
+url: https://martinezc1.github.io/nysOpenData/
+
+development:
+  mode: auto
+
+template:
+  bootstrap: 5
+  params:
+    bootswatch: flatly
+
+home:
+  title: "nysOpenData"
+  description: "Convenient access to NYS Open Data API endpoints in R"
+
+navbar:
+  structure:
+    left: [home, reference, articles]
+    right: [github]
+
+articles:
+  - title: "Getting Started"
+    contents:
+      - getting-started
+
+reference:
+  - title: "Core functions"
+    desc: "Main user-facing functions"
+    contents:
+      - nys_list_datasets
+      - nys_pull_dataset
+      - nys_any_dataset
