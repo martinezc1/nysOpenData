@@ -48,10 +48,9 @@ devtools::install_github("martinezc1/nysOpenData")
 ```{r}
 library(nysOpenData)
 
-# Get 5,000 most recent 311 requests
-data <- nys_pull_dataset(key = "lottery_cash_4_life_winning_numbers_beginning_2014", limit = 5000)
+data <- nys_pull_dataset(dataset = "lottery_cash_4_life_winning_numbers_beginning_2014", limit = 5000)
 
-head(filtered)
+head(data)
 ```
 
 ## About

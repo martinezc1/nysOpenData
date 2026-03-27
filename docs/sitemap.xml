@@ -1,16 +1,16 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>/404.html</loc></url>
-<url><loc>/CODE_OF_CONDUCT.html</loc></url>
-<url><loc>/CONTRIBUTING.html</loc></url>
-<url><loc>/LICENSE-text.html</loc></url>
-<url><loc>/LICENSE.html</loc></url>
-<url><loc>/articles/getting-started.html</loc></url>
-<url><loc>/articles/index.html</loc></url>
-<url><loc>/authors.html</loc></url>
-<url><loc>/index.html</loc></url>
-<url><loc>/reference/index.html</loc></url>
-<url><loc>/reference/nys_any_dataset.html</loc></url>
-<url><loc>/reference/nys_list_datasets.html</loc></url>
-<url><loc>/reference/nys_pull_dataset.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/404.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/CONTRIBUTING.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/LICENSE-text.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/LICENSE.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/articles/getting-started.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/articles/index.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/authors.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/index.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/reference/index.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/reference/nys_any_dataset.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/reference/nys_list_datasets.html</loc></url>
+<url><loc>https://martinezc1.github.io/nysOpenData/reference/nys_pull_dataset.html</loc></url>
 </urlset>
 

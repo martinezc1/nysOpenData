@@ -5,8 +5,6 @@ development:
 
 template:
   bootstrap: 5
-  params:
-    bootswatch: flatly
 
 home:
   title: "nysOpenData"
@@ -18,7 +16,7 @@ navbar:
     right: [github]
 
 articles:
-  - title: "Getting Started"
+  - title: "Vignettes"
     contents:
       - getting-started
 
