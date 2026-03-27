@@ -2,10 +2,8 @@
 # nysOpenData
 
 `nysOpenData` provides simple, reproducible access to datasets from
-the  
-\[NY State Open Data\]<https://data.ny.gov/>) platform — directly from
-R,  
-with **no API keys** or manual downloads required. The package is
+the [NY State Open Data](https://data.ny.gov/) platform — directly from
+R, with **no API keys** or manual downloads required. The package is
 available on **CRAN**.
 
 Version **0.1.0** introduces a streamlined, catalog-driven interface for
