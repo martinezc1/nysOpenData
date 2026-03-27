@@ -34,7 +34,8 @@ Suggests:
     testthat (>= 3.0.0),
     vcr,
     withr,
-    webmockr
+    webmockr,
+    ggplot2
 URL: https://martinezc1.github.io/nysOpenData/, https://github.com/martinezc1/nysOpenData
 BugReports: https://github.com/martinezc1/nysOpenData/issues
 VignetteBuilder: knitr
