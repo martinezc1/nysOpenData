@@ -1,7 +1,7 @@
 Package: nysOpenData
 Type: Package
 Title: Convenient Access to NYS Open Data API Endpoints
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(
       person("Christian", "Martinez", 

@@ -1,12 +1,19 @@
 
 # nysOpenData
 
+[![CRAN status](https://www.r-pkg.org/badges/version/nysOpenData)](https://CRAN.R-project.org/package=nysOpenData)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/nysOpenData?color=blue)](https://r-pkg.org/pkg/nysOpenData)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
+[![Project Status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Codecov test coverage](https://codecov.io/gh/martinezc1/nysOpenData/branch/main/graph/badge.svg)](https://app.codecov.io/gh/martinezc1/nysOpenData)
+[![R-CMD-check](https://github.com/martinezc1/nysOpenData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/martinezc1/nysOpenData/actions/workflows/R-CMD-check.yaml)
+
 `nysOpenData` provides simple, reproducible access to datasets from
 the [NY State Open Data](https://data.ny.gov/) platform — directly from
 R, with **no API keys** or manual downloads required. The package is
 available on **CRAN**.
 
-Version **0.1.0** introduces a streamlined, catalog-driven interface for
+Version **0.1.1** introduces a streamlined, catalog-driven interface for
 NYS Open Data.
 
 The package provides three core functions:
@@ -40,6 +47,12 @@ via
 ------------------------------------------------------------------------
 
 ## Installation
+
+### From **CRAN**
+
+``` r
+install.packages("nysOpenData")
+```
 
 ### Development version (GitHub)
 
@@ -84,13 +97,17 @@ real-world analysis.
 
 While the [`RSocrata`](https://CRAN.R-project.org/package=RSocrata)
 package provides a general interface for any Socrata-backed portal,
-`nysOpenData` is specifically tailored for the New York City ecosystem.
+`nysOpenData` is specifically tailored for **New York State Open Data**.
 
-- **Ease of Use**: No need to hunt for 4x4 dataset IDs (e.g.,
-  `kwxv-fwze`); use `nys_pull_dataset()` with a human-readable catalog
-  key.
-- **Open Literacy**: Designed specifically for students and researchers
-  to lower the barrier to entry for civic data analysis.
+This package is part of a broader ecosystem of tools for working with New York open data:
+
+- `nysOpenData` — streamlined access to NYC Open Data  
+- `nysOpenData` — streamlined access to NY State Open Data  
+
+Together, these packages provide a consistent, user-friendly interface for working with civic data across jurisdictions.
+
+- **Ease of Use**: No need to hunt for 4x4 dataset IDs (e.g., `kwxv-fwze`); use catalog-based keys instead.
+- **Open Literacy**: Designed specifically for students and researchers to lower the barrier to entry for civic data analysis.
 
 ------------------------------------------------------------------------
 

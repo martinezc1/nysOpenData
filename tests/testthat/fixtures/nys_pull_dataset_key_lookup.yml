@@ -1,0 +1,30 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://data.ny.gov/resource/kwxv-fwze.json?%24limit=2
+  response:
+    status: 200
+    headers:
+      server: nginx
+      date: Fri, 27 Mar 2026 23:08:25 GMT
+      content-type: application/json;charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      access-control-allow-origin: '*'
+      etag: '"Zm94dHJvdC42MTA2XzEwMzFfNDk4OF9paTdVTXdUN2NCbWwzOWtnS3lWTnJNYjBwbw---gzivpqqj4WVpGEcnL9FNd8KozORKTb--gzip--gzip"'
+      x-soda2-fields: '["draw_date","winning_numbers","cash_ball"]'
+      x-soda2-types: '["floating_timestamp","text","text"]'
+      x-soda2-data-out-of-date: 'false'
+      x-soda2-truth-last-modified: Sun, 22 Feb 2026 08:33:20 GMT
+      x-soda2-secondary-last-modified: Sun, 22 Feb 2026 08:33:20 GMT
+      last-modified: Sun, 22 Feb 2026 08:33:20 GMT
+      vary: Accept-Encoding
+      content-encoding: gzip
+      strict-transport-security: max-age=31536000; includeSubDomains
+      x-socrata-requestid: 85a2998729ea86f90172a6e572879cd1
+    body:
+      string: |
+        [{"draw_date":"2026-02-21T00:00:00.000","winning_numbers":"20 25 30 52 55","cash_ball":"04"}
+        ,{"draw_date":"2026-02-20T00:00:00.000","winning_numbers":"02 28 49 50 56","cash_ball":"01"}]
+  recorded_at: 2026-03-27 23:08:25
+recorded_with: VCR-vcr/2.1.0
