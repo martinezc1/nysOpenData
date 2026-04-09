@@ -6,7 +6,6 @@
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![Project Status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Codecov test coverage](https://codecov.io/gh/martinezc1/nysOpenData/branch/main/graph/badge.svg)](https://app.codecov.io/gh/martinezc1/nysOpenData)
-[![R-CMD-check](https://github.com/martinezc1/nysOpenData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/martinezc1/nysOpenData/actions/workflows/R-CMD-check.yaml)
 
 `nysOpenData` provides simple, reproducible access to datasets from
 the [NY State Open Data](https://data.ny.gov/) platform — directly from
