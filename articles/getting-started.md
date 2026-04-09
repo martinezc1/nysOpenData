@@ -49,7 +49,7 @@ nys_list_datasets() |> head()
 #> 2 open_ny_q… 22ie… Open… public      https://da… 2022-… dcat:D… 2025-06… <chr>  
 #> 3 lobbying_… 238s… Lobb… public      https://da… 2018-… dcat:D… 2023-07… <chr>  
 #> 4 mta_subwa… 23fs… MTA … public      https://da… 2025-… dcat:D… 2026-03… <chr>  
-#> 5 alternati… 23ry… Alte… public      https://da… 2023-… dcat:D… 2023-08… <NULL> 
+#> 5 alternati… 23ry… Alte… public      https://da… 2023-… dcat:D… 2026-03… <NULL> 
 #> 6 nys_thruw… 23v4… NYS … public      https://da… 2017-… dcat:D… 2020-01… <chr>  
 #> # ℹ 9 more variables: identifier <chr>, description <chr>, distribution <list>,
 #> #   theme <list>, `contactPoint.@type` <chr>, contactPoint.fn <chr>,
