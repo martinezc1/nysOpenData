@@ -1,4 +1,4 @@
 # License
 
     YEAR: 2026
-    COPYRIGHT HOLDER: Christian A. Martinez
+    COPYRIGHT HOLDER: Christian Martinez
