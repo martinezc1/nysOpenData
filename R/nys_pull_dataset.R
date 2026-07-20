@@ -73,7 +73,7 @@
 #' @examples
 #' if (interactive() && curl::has_internet()) {
 #'   # Pull by human-readable key
-#'   nys_pull_dataset("example_dataset_name", limit = 3)
+#'   nys_pull_dataset("city_university_of_new_york_cuny_programs_beginning_fall_2008", limit = 3)
 #'
 #'   # Pull by Socrata UID
 #'   nys_pull_dataset("28gk-bu58", limit = 3)
