@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">nysOpenData</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +63,7 @@ Martinez</h4>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://martinezc1.github.io/nysOpenData/">nysOpenData</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning: package 'dplyr' was built under R version 4.5.2</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; Attaching package: 'dplyr'</span></span>
 <span><span class="co">#&gt; The following objects are masked from 'package:stats':</span></span>
@@ -96,12 +97,12 @@ thousands of datasets found on the portal.</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 18</span></span></span>
 <span><span class="co">#&gt;   key        uid   title accessLevel landingPage issued `@type` modified keyword</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;list&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> state_of_… 22ew… Stat… public      https://da… 2016-… dcat:D… 2019-06… <span style="color: #949494;">&lt;chr&gt;</span>  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> state_of_… 22ew… Stat… public      https://da… 2016-… dcat:D… 2026-04… <span style="color: #949494;">&lt;chr&gt;</span>  </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> open_ny_q… 22ie… Open… public      https://da… 2022-… dcat:D… 2025-06… <span style="color: #949494;">&lt;chr&gt;</span>  </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> lobbying_… 238s… Lobb… public      https://da… 2018-… dcat:D… 2023-07… <span style="color: #949494;">&lt;chr&gt;</span>  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> mta_subwa… 23fs… MTA … public      https://da… 2025-… dcat:D… 2026-03… <span style="color: #949494;">&lt;chr&gt;</span>  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> alternati… 23ry… Alte… public      https://da… 2023-… dcat:D… 2023-08… <span style="color: #949494;">&lt;NULL&gt;</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> nys_thruw… 23v4… NYS … public      https://da… 2017-… dcat:D… 2020-01… <span style="color: #949494;">&lt;chr&gt;</span>  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> mta_subwa… 23fs… MTA … public      https://da… 2026-… dcat:D… 2026-06… <span style="color: #949494;">&lt;chr&gt;</span>  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> alternati… 23ry… Alte… public      https://da… 2023-… dcat:D… 2026-03… <span style="color: #949494;">&lt;NULL&gt;</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> nys_thruw… 23v4… NYS … public      https://da… 2017-… dcat:D… 2026-04… <span style="color: #949494;">&lt;chr&gt;</span>  </span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 9 more variables: identifier &lt;chr&gt;, description &lt;chr&gt;, distribution &lt;list&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   theme &lt;list&gt;, `contactPoint.@type` &lt;chr&gt;, contactPoint.fn &lt;chr&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   contactPoint.hasEmail &lt;chr&gt;, `publisher.@type` &lt;chr&gt;, publisher.name &lt;chr&gt;</span></span></span></code></pre></div>
@@ -120,7 +121,7 @@ use either of the methods below:</p>
 <span>  dataset <span class="op">=</span> <span class="st">"kwxv-fwze"</span>, limit <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">nys_cash_for_life_key</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/nys_pull_dataset.html">nys_pull_dataset</a></span><span class="op">(</span></span>
-<span>  dataset <span class="op">=</span> <span class="st">"lottery_cash_4_life_winning_numbers_beginning_2014"</span>, limit <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
+<span>  dataset <span class="op">=</span> <span class="st">"lottery_cash_4_life_winning_numbers_2014_2026_retired_game"</span>, limit <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
 <p>No matter if we put the <code>uid</code> or the <code>key</code> as
 the value for <code>dataset =</code>, we successfully get the data!</p>
 </div>
@@ -268,7 +269,7 @@ visualization.</p>
 <p>If you use this package for research or educational purposes, please
 cite it as follows:</p>
 <p>Martinez C (2026). nysOpenData: Convenient Access to nys Open Data
-API Endpoints. R package version 0.1.0, <a href="https://martinezc1.github.io/nysOpenData/" class="uri">https://martinezc1.github.io/nysOpenData/</a>.</p>
+API Endpoints. R package version 0.1.2, <a href="https://martinezc1.github.io/nysOpenData/" class="uri">https://martinezc1.github.io/nysOpenData/</a>.</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
