@@ -1,4 +1,4 @@
-# Internal helpers for NYS Open Data requests ####
+# Internal helpers for New York State Open Data requests ####
 # - .nys_endpoint(): constructs the Socrata endpoint URL from a dataset id
 # - .nys_add_filters(): adds equality filters (and IN() for multi-values) as a Socrata $where clause
 # - .nys_add_where(): appends a raw SoQL WHERE expression (for ranges, >=, <, etc.)
@@ -142,7 +142,12 @@
     length(dataset_id) == 1,
     nzchar(dataset_id)
   )
-  paste0("https://data.ny.gov/resource/", dataset_id, ".json")
+
+  paste0(
+    "https://data.ny.gov/resource/",
+    dataset_id,
+    ".json"
+  )
 }
 
 .nys_add_filters <- function(query, filters) {
@@ -200,7 +205,7 @@
 .nys_get_json <- function(endpoint, query, timeout_sec = 30) {
   if (!curl::has_internet()) {
     stop(
-      "No internet connection detected. This function requires access to data.ny.gov.",
+      "No internet connection detected. This function requires access to the New York State Open Data portal.",
       call. = FALSE
     )
   }
@@ -210,7 +215,7 @@
     error = function(e) {
       stop(
         paste0(
-          "NYS Open Data request failed (network unavailable or API slow).\n",
+          "New York State Open Data request failed (network unavailable or API slow).",
           "Try again later or increase `timeout_sec`.\n\n",
           "Underlying error: ", conditionMessage(e)
         ),
@@ -228,7 +233,7 @@
 
     stop(
       paste0(
-        "NYS Open Data request failed with HTTP status ", status, ".\n",
+        "New York State Open Data request failed with HTTP status ", status, ".\n",
         "Try again later, or verify your filters.\n\n",
         if (nzchar(body_txt)) paste0("Response: ", substr(body_txt, 1, 500)) else ""
       ),

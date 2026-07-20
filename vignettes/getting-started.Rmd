@@ -47,7 +47,7 @@ nys_cash_for_life_uid <- nys_pull_dataset(
   dataset = "kwxv-fwze", limit = 2)
 
 nys_cash_for_life_key <- nys_pull_dataset(
-  dataset = "lottery_cash_4_life_winning_numbers_beginning_2014", limit = 2)
+  dataset = "lottery_cash_4_life_winning_numbers_2014_2026_retired_game", limit = 2)
 ```
 
 No matter if we put the `uid` or the `key` as the value for `dataset =`, we successfully get the data! 
@@ -145,4 +145,4 @@ As demonstrated in this vignette, the package provides a seamless workflow for t
 
 If you use this package for research or educational purposes, please cite it as follows:
 
-Martinez C (2026). nysOpenData: Convenient Access to nys Open Data API Endpoints. R package version 0.1.0, <https://martinezc1.github.io/nysOpenData/>.
+Martinez C (2026). nysOpenData: Convenient Access to nys Open Data API Endpoints. R package version 0.1.2, <https://martinezc1.github.io/nysOpenData/>.

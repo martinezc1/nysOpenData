@@ -12,7 +12,7 @@ the [NY State Open Data](https://data.ny.gov/) platform — directly from
 R, with **no API keys** or manual downloads required. The package is
 available on **CRAN**.
 
-Version **0.1.1** introduces a streamlined, catalog-driven interface for
+Version **0.1.2** introduces a streamlined, catalog-driven interface for
 NYS Open Data.
 
 The package provides three core functions:
@@ -100,8 +100,11 @@ package provides a general interface for any Socrata-backed portal,
 
 This package is part of a broader ecosystem of tools for working with New York open data:
 
-- `nysOpenData` — streamlined access to NYC Open Data  
-- `nysOpenData` — streamlined access to NY State Open Data  
+- `nycOpenData` — streamlined access to NYC Open Data  
+- `nysOpenData` — streamlined access to NY State Open Data
+- `mtaOpenData` — streamlined access to MTA-related NY State Open Data
+- `chiOpenData` — streamlined access to Chicago-related City Open Data
+- `laOpenData`  — streamlined access to Los Angeles-related City Open Data
 
 Together, these packages provide a consistent, user-friendly interface for working with civic data across jurisdictions.
 
