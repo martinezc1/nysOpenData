@@ -1,6 +1,7 @@
 # Getting Started with nysOpenData
 
 ``` r
+
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(nysOpenData)
 library(ggplot2)
@@ -41,16 +42,17 @@ function. This provides information for thousands of datasets found on
 the portal.
 
 ``` r
+
 nys_list_datasets() |> head()
 #> # A tibble: 6 × 18
 #>   key        uid   title accessLevel landingPage issued `@type` modified keyword
 #>   <chr>      <chr> <chr> <chr>       <chr>       <chr>  <chr>   <chr>    <list> 
-#> 1 state_of_… 22ew… Stat… public      https://da… 2016-… dcat:D… 2019-06… <chr>  
+#> 1 state_of_… 22ew… Stat… public      https://da… 2016-… dcat:D… 2026-04… <chr>  
 #> 2 open_ny_q… 22ie… Open… public      https://da… 2022-… dcat:D… 2025-06… <chr>  
 #> 3 lobbying_… 238s… Lobb… public      https://da… 2018-… dcat:D… 2023-07… <chr>  
-#> 4 mta_subwa… 23fs… MTA … public      https://da… 2025-… dcat:D… 2026-03… <chr>  
+#> 4 mta_subwa… 23fs… MTA … public      https://da… 2026-… dcat:D… 2026-06… <chr>  
 #> 5 alternati… 23ry… Alte… public      https://da… 2023-… dcat:D… 2026-03… <NULL> 
-#> 6 nys_thruw… 23v4… NYS … public      https://da… 2017-… dcat:D… 2020-01… <chr>  
+#> 6 nys_thruw… 23v4… NYS … public      https://da… 2017-… dcat:D… 2026-04… <chr>  
 #> # ℹ 9 more variables: identifier <chr>, description <chr>, distribution <list>,
 #> #   theme <list>, `contactPoint.@type` <chr>, contactPoint.fn <chr>,
 #> #   contactPoint.hasEmail <chr>, `publisher.@type` <chr>, publisher.name <chr>
@@ -69,11 +71,12 @@ For instance, if we want to pull the the dataset
 of the methods below:
 
 ``` r
+
 nys_cash_for_life_uid <- nys_pull_dataset(
   dataset = "kwxv-fwze", limit = 2)
 
 nys_cash_for_life_key <- nys_pull_dataset(
-  dataset = "lottery_cash_4_life_winning_numbers_beginning_2014", limit = 2)
+  dataset = "lottery_cash_4_life_winning_numbers_2014_2026_retired_game", limit = 2)
 ```
 
 No matter if we put the `uid` or the `key` as the value for `dataset =`,
@@ -149,6 +152,7 @@ called “cash_ball” which we can use to accomplish this.
 
 ``` r
 
+
 lottery_04 <- nys_pull_dataset(dataset = "kwxv-fwze",limit = 2, filters = list(cash_ball = "04"))
 lottery_04
 #> # A tibble: 2 × 3
@@ -174,6 +178,7 @@ we see the only `cash_ball` featured in our dataset is “04.”
 We can also add more than one criteria when filtering.
 
 ``` r
+
 lottery_01_02 <- nys_pull_dataset(dataset = "kwxv-fwze",limit = 2, filters = list(cash_ball = c("01","02")))
 lottery_01_02
 #> # A tibble: 2 × 3
@@ -195,6 +200,7 @@ the top `cash_ball` winners.
 To do this, we will create a bar graph of the Cash Ball frequencies.
 
 ``` r
+
 # Visualizing the distribution, ordered by frequency
 
 lottery <- nys_pull_dataset(dataset = "kwxv-fwze",limit = 50)
@@ -244,5 +250,5 @@ If you use this package for research or educational purposes, please
 cite it as follows:
 
 Martinez C (2026). nysOpenData: Convenient Access to nys Open Data API
-Endpoints. R package version 0.1.0,
+Endpoints. R package version 0.1.2,
 <https://martinezc1.github.io/nysOpenData/>.

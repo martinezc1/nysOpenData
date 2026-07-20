@@ -10,14 +10,13 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Codecov test
 coverage](https://codecov.io/gh/martinezc1/nysOpenData/branch/main/graph/badge.svg)](https://app.codecov.io/gh/martinezc1/nysOpenData)
-[![R-CMD-check](https://github.com/martinezc1/nysOpenData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/martinezc1/nysOpenData/actions/workflows/R-CMD-check.yaml)
 
 `nysOpenData` provides simple, reproducible access to datasets from the
 [NY State Open Data](https://data.ny.gov/) platform — directly from R,
 with **no API keys** or manual downloads required. The package is
 available on **CRAN**.
 
-Version **0.1.1** introduces a streamlined, catalog-driven interface for
+Version **0.1.2** introduces a streamlined, catalog-driven interface for
 NYS Open Data.
 
 The package provides three core functions:
@@ -58,12 +57,14 @@ via
 ### From **CRAN**
 
 ``` r
+
 install.packages("nysOpenData")
 ```
 
 ### Development version (GitHub)
 
 ``` r
+
 devtools::install_github("martinezc1/nysOpenData")
 ```
 
@@ -72,6 +73,7 @@ devtools::install_github("martinezc1/nysOpenData")
 ## Example
 
 ``` r
+
 library(nysOpenData)
 
 data <- nys_pull_dataset(dataset = "lottery_cash_4_life_winning_numbers_beginning_2014", limit = 5000)
@@ -111,8 +113,12 @@ package provides a general interface for any Socrata-backed portal,
 This package is part of a broader ecosystem of tools for working with
 New York open data:
 
-- `nysOpenData` — streamlined access to NYC Open Data  
+- `nycOpenData` — streamlined access to NYC Open Data  
 - `nysOpenData` — streamlined access to NY State Open Data
+- `mtaOpenData` — streamlined access to MTA-related NY State Open Data
+- `chiOpenData` — streamlined access to Chicago-related City Open Data
+- `laOpenData` — streamlined access to Los Angeles-related City Open
+  Data
 
 Together, these packages provide a consistent, user-friendly interface
 for working with civic data across jurisdictions.

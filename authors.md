@@ -12,13 +12,13 @@ Source:
 [`DESCRIPTION`](https://github.com/martinezc1/nysOpenData/blob/main/DESCRIPTION)
 
 Martinez C (2026). *nysOpenData: Convenient Access to NYS Open Data API
-Endpoints*. R package version 0.1.1,
+Endpoints*. R package version 0.1.2,
 <https://martinezc1.github.io/nysOpenData/>.
 
     @Manual{,
       title = {nysOpenData: Convenient Access to NYS Open Data API Endpoints},
       author = {Christian Martinez},
       year = {2026},
-      note = {R package version 0.1.1},
+      note = {R package version 0.1.2},
       url = {https://martinezc1.github.io/nysOpenData/},
     }

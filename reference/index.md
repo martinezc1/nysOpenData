@@ -5,8 +5,9 @@
 Main user-facing functions
 
 - [`nys_list_datasets()`](https://martinezc1.github.io/nysOpenData/reference/nys_list_datasets.md)
-  : List datasets available in nysOpenData
+  : List available New York State Open Data datasets
 - [`nys_pull_dataset()`](https://martinezc1.github.io/nysOpenData/reference/nys_pull_dataset.md)
-  : Pull a NYS Open Data dataset from the NYS Open Data catalog
+  : Pull a New York State Open Data dataset
 - [`nys_any_dataset()`](https://martinezc1.github.io/nysOpenData/reference/nys_any_dataset.md)
-  : Load Any NYS Open Data Dataset
+  : Pull any New York State Open Data dataset from a Socrata JSON
+  endpoint
